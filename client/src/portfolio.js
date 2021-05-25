@@ -1,48 +1,45 @@
-/* Change this file to get your personal Portfolio */
-// Summary And Greeting Section
 import emoji from "react-easy-emoji";
 
 const illustration = {
-  animated: true // set to false to use static SVG
+  animated: true // SET TO TRUE TO USE STATIC SVG
 };
 
+// GREETING SECTION
 const greeting = {
   username: "Joshua Wilensky",
   title: "Hi, I'm Joshua!",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A passionate Full Stack Software Developer 🚀 who loves to build Web applications using JavaScript / Reactjs / Nodejs and some other cool libraries and frameworks."
   ),
   resumeLink:
     "https://docs.google.com/document/d/1cEeTeV_56LQTNqlq4WHZcyYXlPYmagC9A1uOBpDQ1zI/edit",
-  displayGreeting: true // Set false to hide this section, defaults to true
+  displayGreeting: true // Set true to hide this section, defaults to true
 };
 
-// Social Media Links
+// SOCIAL MEDIA SECTION
 const socialMediaLinks = {
   github: "https://github.com/joshwilensky",
   linkedin: "https://www.linkedin.com/in/joshwilensky/",
   gmail: "joshwilensky@gmail.com",
   gitlab: "https://gitlab.com/joshwilensky",
-  display: true // Set true to display this section, defaults to false
+  display: true
 };
 
-// Skills Section
+// SKILLS SECTION
 const skillsSection = {
   title: "What I do",
   subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Develop highly interactive Front-End/User Interfaces for your web"
     ),
     emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Integration of third party services such as Firebase, AWS & Heroku"
     )
   ],
 
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
-
+  // FONT AWESOME LOGOS
   softwareSkills: [
     {
       skillName: "HTML-5",
@@ -110,50 +107,50 @@ https://fontawesome.com/icons?d=gallery */
     },
     {
       skillName: "GitLab",
-      fontAwesomeClassname: "fab fa-gitlab",
+      fontAwesomeClassname: "fab fa-gitlab"
     },
     {
       skillName: "Flask",
       fontAwesomeClassname: "fab fa-affiliatetheme"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
-// Education Section
-
+// EDUCATION SECTION
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: true,
   schools: [
     {
       schoolName: "Columbia University",
       logo: require("./assets/images/columbiaLogo.png"),
-      subHeader: "Full Stack Web Development Certification",
-      duration: "June 2020 - September 2020",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      subHeader: "Certification",
+      degree: "Full Stack Web Development",
+      duration: "June 2020 - September 2020"
     },
     {
-      schoolName: "Queens College",
-      logo: require("./assets/images/queensCollege.jpg"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc:
-        "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "City University of New York - Queens College",
+      logo: require("./assets/images/queensLogo.jpg"),
+      subHeader: "Bachelor of Arts",
+      degree: "Media Studies and Business Management",
+      duration: "2004 - 2007"
+    },
+    {
+      schoolName: "Nassau Community College",
+      logo: require("./assets/images/nccLogo.png"),
+      subHeader: "Associate of Arts",
+      degree: "Liberal Arts",
+      duration: "2002 - 2003"
     }
   ]
 };
 
-// Your top 3 proficient stacks/tech experience
+// TECH EXPERIENCE SECTION
 const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Front End/Design", //Insert stack or technology you have experience in
+      Stack: "Front-End/Design", //Insert stack or technology you have experience in
       progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
@@ -165,11 +162,10 @@ const techStack = {
       progressPercentage: "60%"
     }
   ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+  displayCodersrank: true // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to true
 };
 
-// Work experience section
-
+// WORK EXPERIENCE SECTION
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
@@ -178,8 +174,7 @@ const workExperiences = {
       company: "Facebook",
       companylogo: require("./assets/images/facebookLogo.png"),
       date: "June 2018 – Present",
-      desc:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       descBullets: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
@@ -190,30 +185,26 @@ const workExperiences = {
       company: "Quora",
       companylogo: require("./assets/images/quoraLogo.png"),
       date: "May 2017 – May 2018",
-      desc:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
       role: "Software Engineer Intern",
       company: "Airbnb",
       companylogo: require("./assets/images/airbnbLogo.png"),
       date: "Jan 2015 – Sep 2015",
-      desc:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
   ]
 };
 
 /* Your Open Source Section to View Your Github Pinned Projects
 To know how to get github key look at readme.md */
-
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  showGithubProfile: "true", // Set true or true to show Contact profile using Github, defaults to true
+  display: true // Set true to hide this section, defaults to true
 };
 
-// Some big projects you have worked on
-
+// BIG PROJECTS SECTION
 const bigProjects = {
   title: "Big Projects",
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
@@ -224,11 +215,6 @@ const bigProjects = {
       projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       footerLink: [
         {
-
-
-
-
-          
           name: "Visit Website",
           url: "http://saayahealth.com/"
         }
@@ -247,12 +233,10 @@ const bigProjects = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false
 };
 
-// Achievement Section
-// Include certificates, talks etc
-
+// ACHIEVEMENTS SECTION
 const achievementSection = {
   title: emoji("Achievements And Certifications 🏆 "),
   subtitle:
@@ -267,18 +251,15 @@ const achievementSection = {
       footerLink: [
         {
           name: "Certification",
-          url:
-            "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
         },
         {
           name: "Award Letter",
-          url:
-            "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
+          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
         },
         {
           name: "Google Code-in Blog",
-          url:
-            "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
         }
       ]
     },
@@ -290,8 +271,7 @@ const achievementSection = {
       footerLink: [
         {
           name: "View Google Assistant Action",
-          url:
-            "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
         }
       ]
     },
@@ -309,11 +289,10 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false
 };
 
-// Blogs Section
-
+// BLOGS SECTION
 const blogSection = {
   title: "Blogs",
   subtitle:
@@ -321,8 +300,7 @@ const blogSection = {
 
   blogs: [
     {
-      url:
-        "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
+      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
       title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
       description:
         "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
@@ -334,11 +312,10 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false
 };
 
-// Talks Sections
-
+// TALKS SECTION
 const talkSection = {
   title: "TALKS",
   subtitle: emoji(
@@ -353,35 +330,32 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false
 };
 
-// Podcast Section
-
+// PODCAST SECTION
 const podcastSection = {
   title: emoji("Podcast 🎙️"),
   subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-
-  // Please Provide with Your Podcast embeded Link
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false
 };
 
+// CONTACT INFO SECTION
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
+    "If you'd like to discuss a project, or just want to say hi... My Inbox is open for all.",
   number: "(516) 639-7666",
   email_address: "joshwilensky@gmail.com"
 };
 
-// Twitter Section
-
+// TWITTER SECTION
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false
 };
 
 export {
