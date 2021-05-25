@@ -16,7 +16,7 @@ import {
 function Header() {
   const {isDark} = useContext(StyleContext);
   const viewExperience = workExperiences.display;
-  const viewopenSource = openSource.display;
+  const viewOpenSource = openSource.display;
   const viewSkills = skillsSection.display;
   const viewAchievement = achievementSection.display;
   const viewBlog = blogSection.display;
@@ -49,9 +49,9 @@ function Header() {
               <a href="#experience">Work Experiences</a>
             </li>
           )}
-          {viewopenSource && (
+          {viewOpenSource && (
             <li>
-              <a href="#openSource">Open Source</a>
+              <a href="#opensource">Open Source</a>
             </li>
           )}
           {viewAchievement && (
@@ -73,7 +73,8 @@ function Header() {
             <a href="#contact">Contact Me</a>
           </li>
           <li>
-            <a href="#Education">Education
+            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+            <a>
               <ToggleSwitch />
             </a>
           </li>
